@@ -1,0 +1,439 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+  min-height: 100vh;
+  background: #f5f7fb;
+  color: #1e293b;
+  transition: all 0.3s ease;
+}
+
+/* =========================
+   DARK THEME
+========================= */
+
+.dashboard.dark {
+  background: #111827;
+  color: #f1f5f9;
+}
+
+.dashboard.dark .stat-card,
+.dashboard.dark .courses-card,
+.dashboard.dark .profile-card,
+.dashboard.dark .settings-card,
+.dashboard.dark .progress-card {
+  background: #1f2937;
+  color: #f1f5f9;
+}
+
+.dashboard.dark .section-subtitle,
+.dashboard.dark .profile-role {
+  color: #cbd5e1;
+}
+
+.dashboard.dark .course-item:hover {
+  background: #374151;
+}
+
+.dashboard.dark .setting-row {
+  border-top-color: #475569;
+}
+
+.dashboard.dark .MuiListItemText-secondary {
+  color: #cbd5e1;
+}
+
+.dashboard.dark .profile-info {
+  color: #e2e8f0;
+}
+
+.dashboard.dark .drawer {
+  background: #1f2937;
+  color: white;
+}
+
+.dashboard.dark .MuiDivider-root {
+  border-color: #475569;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  height: 70px;
+  padding: 0 6%;
+  background: #172554;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.menu-button {
+  color: white !important;
+  font-size: 24px !important;
+}
+
+.logo {
+  font-size: 24px !important;
+  font-weight: bold !important;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.notification-icon {
+  font-size: 24px;
+}
+
+.navbar-avatar {
+  width: 42px !important;
+  height: 42px !important;
+  background: #2563eb !important;
+}
+
+/* =========================
+   DRAWER
+========================= */
+
+.drawer {
+  width: 280px;
+  min-height: 100vh;
+  padding: 25px 10px;
+  background: white;
+}
+
+.drawer-profile {
+  text-align: center;
+  padding: 10px 0 25px;
+}
+
+.large-avatar {
+  width: 80px !important;
+  height: 80px !important;
+  margin: 0 auto 12px;
+  background: #2563eb !important;
+  font-size: 25px !important;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.main {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+/* =========================
+   WELCOME
+========================= */
+
+.welcome {
+  background: linear-gradient(
+    135deg,
+    #1e3a8a,
+    #2563eb
+  );
+
+  color: white;
+
+  padding: 45px;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+}
+
+.welcome-title {
+  font-weight: bold !important;
+  margin-bottom: 10px !important;
+}
+
+.welcome-text {
+  font-size: 18px !important;
+}
+
+.welcome-avatar {
+  width: 100px !important;
+  height: 100px !important;
+  font-size: 30px !important;
+  background: white !important;
+  color: #1e3a8a !important;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  padding: 25px;
+  text-align: center;
+  border-radius: 15px !important;
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+}
+
+.stat-icon {
+  font-size: 35px;
+  margin-bottom: 8px;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.courses-card,
+.profile-card {
+  padding: 30px;
+  border-radius: 16px !important;
+}
+
+.section-title {
+  font-weight: bold !important;
+}
+
+.section-subtitle {
+  color: #64748b;
+  margin-top: 5px !important;
+}
+
+/* =========================
+   COURSE LIST
+========================= */
+
+.course-item {
+  margin-top: 10px;
+  padding: 15px !important;
+  border-radius: 10px;
+}
+
+.course-item:hover {
+  background: #f1f5f9;
+}
+
+.course-avatar {
+  background: #dbeafe !important;
+  font-size: 22px !important;
+}
+
+/* =========================
+   PROFILE
+========================= */
+
+.profile-card {
+  text-align: center;
+}
+
+.profile-avatar {
+  width: 100px !important;
+  height: 100px !important;
+  margin: auto;
+  background: #2563eb !important;
+  font-size: 30px !important;
+}
+
+.profile-name {
+  margin-top: 15px !important;
+  font-weight: bold !important;
+}
+
+.profile-role {
+  color: #64748b;
+}
+
+.profile-divider {
+  margin: 20px 0 !important;
+}
+
+.profile-info {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.profile-button {
+  padding: 12px !important;
+}
+
+/* =========================
+   SETTINGS
+========================= */
+
+.settings-card {
+  padding: 30px;
+  border-radius: 16px !important;
+  margin-bottom: 30px;
+}
+
+.setting-row {
+  margin-top: 25px;
+  padding-top: 20px;
+
+  border-top: 1px solid #e2e8f0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =========================
+   PROGRESS
+========================= */
+
+.progress-card {
+  padding: 35px;
+  border-radius: 16px !important;
+  margin-bottom: 30px;
+}
+
+.progress-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progress-number {
+  margin-top: 20px !important;
+  font-weight: bold !important;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  text-align: center;
+  padding: 35px;
+  background: #172554;
+  color: white;
+}
+
+.footer p:first-child {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome-title {
+    font-size: 36px !important;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .main {
+    width: 94%;
+    padding: 25px 0;
+  }
+
+  .welcome {
+    padding: 30px 25px;
+  }
+
+  .welcome-title {
+    font-size: 28px !important;
+  }
+
+  .welcome-avatar {
+    width: 70px !important;
+    height: 70px !important;
+    font-size: 22px !important;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .progress-content {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .courses-card,
+  .profile-card,
+  .settings-card,
+  .progress-card {
+    padding: 22px;
+  }
+
+  .setting-row {
+    gap: 15px;
+  }
+}
